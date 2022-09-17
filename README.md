@@ -16,7 +16,7 @@ wget https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/2jngk5tz
 unzip 2jngk5tzm4-1.zip
 tar xzf aers_v1_0.tar.gz
 ```
-Then, copy the files from https://github.com/edoapra/venus-nwchem/tree/main/new
+Then, copy the files from https://github.com/edoapra/venus-nwchem/tree/main/new into  the NWC directory
 
 
 
