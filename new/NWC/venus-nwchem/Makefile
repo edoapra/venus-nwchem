@@ -36,7 +36,7 @@ OBJS=$(VEN) $(QM)
 
 ven_nw.e:	$(OBJS)
 
-	$(FC) $(FOPTIONS) $(FDEBUG) $(OBJS) -L$(NWCHEM_TOP)/lib/$(NWCHEM_TARGET) -L$(NWCHEM_TOP)/src/tools/install/lib -o $@ $(NWCHEM_TOP)/src/stubs.o   `cat libs.txt`
+	$(FC) $(FOPTIONS) $(FDEBUG) $(OBJS) -L$(NWCHEM_TOP)/lib/$(NWCHEM_TARGET) -L$(NWCHEM_TOP)/src/tools/install/lib -o $@ $(NWCHEM_TOP)/src/stubs.o -lgeninterface -lnwcutil -lnwctask   `cat libs.txt`
 #	$(FC) $(FOPTIONS) $(FDEBUG) $(OBJS) -L$(NWCHEM_TOP)/lib/$(NWCHEM_TARGET) -L$(NWCHEM_TOP)/src/tools/install/lib -o $@ $(NWCHEM_TOP)/src/stubs.o $(LIBS) -lgeninterface -lnwcutil -lnwctask -lccsd -lmcscf -lselci -lmp2 -lmoints -lstepper -ldriver -loptim -lnwdft -lgradients -lcphf -lesp -lddscf -lguess -lhessian -lvib -lnwcutil -lrimp2 -lproperty -lnwints -ldplot -lvscf -letrans -ltce -lbq -lcons -lnwcutil -lga -lpeigs -lperfm -lcons -lbq -lnwcutil ${MLIB_LDFLAGS} -llapack -lblas -larmci $(LIBMPI)
 
 clean:
