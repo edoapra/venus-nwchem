@@ -14,7 +14,7 @@ https://data.mendeley.com/datasets/2jngk5tzm4/1
  ### Example
  
 Once the code is installed, test input files are present in the `test` directory.  
-To execute, type the following command
+To execute, type the following command from the `test` directory
 ```
  mpirun -np 2 ../NWC/venus-nwchem/ven_nw.e < Input.dt
  ```
