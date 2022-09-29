@@ -1,5 +1,10 @@
 #!/bin/bash
-git clone --depth=1 https://github.com/nwchemgit/nwchem.git
+rm -rf nwchem-* nwchem*tar*gz
+COMMIT=f03de6b3c4dd7cbd88e873f5b0251d1fd8331327
+wget https://github.com/nwchemgit/nwchem/archive/$COMMIT.tar.gz
+tar xzf $COMMIT.tar.gz
+ln -sf nwchem-$COMMIT nwchem
+#git clone --depth=1 https://github.com/nwchemgit/nwchem.git
 #git clone --depth=1 -b getenv-pull https://github.com/edoapra/nwchem.git
 #wget https://github.com/nwchemgit/nwchem/releases/download/v7.0.2-release/nwchem-7.0.2-release.revision-b9985dfa-srconly.2020-10-12.tar.bz2
 #tar xjf nwchem-7.0.2-release.revision-b9985dfa-srconly.2020-10-12.tar.bz2
