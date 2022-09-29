@@ -1,0 +1,30 @@
+start
+scratch_dir /tmp
+permanent_dir /tmp
+print none
+
+BASIS cartesian
+H library 6-31G*
+C library 6-31G*
+O library 6-31G*
+END
+
+scf
+ UHF
+end
+
+dft
+ mult 1
+ ODFT
+ print none
+ iterations 500
+ CONVERGENCE density 1.0e-6
+ CONVERGENCE gradient 1.0e-6
+ CONVERGENCE energy 1.0e-7
+ XC vwn_5 0.19 lyp 0.81 HFexch 0.20  slater 0.80 becke88 nonlocal 0.72
+end
+
+set task:theory dft 
+
+
+

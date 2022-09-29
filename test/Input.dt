@@ -1,0 +1,40 @@
+O2+C2H4 ab initio direct dynamics (B3LYP/6-31G*)    ! TITLE
+Started at TS-B (singlet biradical -> dioxetane)         ! TITLE
+8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,1      ! potential parameters
+'./Input.nw',B3LYP,6-31G*                                   ! CALL NWChem
+8,8,6,6,1,1,1,1,0.0                                      ! atomic numbers and charge
+143528.384206183d0	                                 ! vzero, TS 
+3,0,0                                                    ! nselt,nsurf,nchkp
+16.0d0,16.0d0,12.0d0,12.0d0,1.007825037d0,1.007825037d0,1.007825037d0,1.007825037d0 ! atomic masses
+3 1 0                                                    ! integrator,lll,niter
+1,500,1,2,                                               ! nt,ns,nip,ncrot
+0.03,                                                    ! time
+2,300.0,                                                 ! nbar,tbar
+5   0   645828609
+0.001,2,                                                 ! hinc,npts           
+8,0,                                                     ! natoma,nlina
+ -0.5426109968   1.2542092274  -0.0756892907
+ -0.5876880812  -0.0463598491   0.3940692720
+  0.6514987925  -0.5408657888  -0.1507518860
+  1.5673302281   0.6283920204   0.0734840760
+  1.7548685262   0.9442390897   1.0950902507
+  2.2481684155   0.9725441438  -0.6986202795
+  0.5371087480  -0.7708685264  -1.2173006291
+  0.9082039277  -1.4590847770   0.3965242168
+300.0                                                   ! VIB TEMP
+0,300.0                                                 ! nrot, ROT TEMP
+0 0 0 0                                                  ! mplot,nplot,nlm,mntr
+0,0                                                      ! natomb,nlinb
+0                                                        ! npaths
+1 1
+1 4
+1 4 1 2 3 4 2 3
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
