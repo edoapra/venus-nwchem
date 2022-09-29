@@ -10,13 +10,13 @@ https://data.mendeley.com/datasets/2jngk5tzm4/1
  cd venus-nwchem
  ./download_and_build.sh
  ```
-### Files Description
+ 
+ ### Example
+ 
+Once the code is installed, test input files are present in the `test` directory.  
+To execute, type the following command
 ```
-wget https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/2jngk5tzm4-1.zip
-unzip 2jngk5tzm4-1.zip
-tar xzf aers_v1_0.tar.gz
-```
-Then, copy the files from https://github.com/edoapra/venus-nwchem/tree/main/new into  the NWC directory
-
+ mpirun -np 2 ../NWC/venus-nwchem/ven_nw.e < Input.dt
+ ```
 
 
