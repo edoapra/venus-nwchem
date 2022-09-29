@@ -1,6 +1,6 @@
 #!/bin/bash
-#git clone --depth=1 https://github.com/nwchemgit/nwchem.git
-git clone --depth=1 -b venus-2022-mods https://github.com/edoapra/nwchem.git
+git clone --depth=1 https://github.com/nwchemgit/nwchem.git
+#git clone --depth=1 -b getenv-pull https://github.com/edoapra/nwchem.git
 #wget https://github.com/nwchemgit/nwchem/releases/download/v7.0.2-release/nwchem-7.0.2-release.revision-b9985dfa-srconly.2020-10-12.tar.bz2
 #tar xjf nwchem-7.0.2-release.revision-b9985dfa-srconly.2020-10-12.tar.bz2
 #ln -sf nwchem-7.0.2 nwchem
